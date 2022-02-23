@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\TStructures;
+use App\Entity\Tarif;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method TStructures|null find($id, $lockMode = null, $lockVersion = null)
- * @method TStructures|null findOneBy(array $criteria, array $orderBy = null)
- * @method TStructures[]    findAll()
- * @method TStructures[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Tarif|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Tarif|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Tarif[]    findAll()
+ * @method Tarif[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class TStructuresRepository extends ServiceEntityRepository
+class TarifRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, TStructures::class);
+        parent::__construct($registry, Tarif::class);
     }
 
     // /**
-    //  * @return TStructures[] Returns an array of TStructures objects
+    //  * @return Tarif[] Returns an array of Tarif objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class TStructuresRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?TStructures
+    public function findOneBySomeField($value): ?Tarif
     {
         return $this->createQueryBuilder('t')
             ->andWhere('t.exampleField = :val')
